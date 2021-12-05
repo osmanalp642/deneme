@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="root">
+        <main class="main-content">
+            <div class="form-group">
+                <div class="login-form">
+                    <img src="instagram128.png" alt="instagram">
+                    <div class="form-attributes">
+                        <form action="" id="form1">
+                            <div class="form-container">
+                                <div class="form-control">
+                                    <div class="input">
+                                        <input required id="userName" type="email" placeholder="Telefon numarası, kullanıcı adı veya e-posta" onchange="kontrol()">
+                                    </div>
+                                    <div class="#"></div>
+                                </div>
+                                <div class="form-control">
+                                    <div class="input-withButton">
+                                        <label for="input" class="password" style="display: flex;">
+                                            <input required type="password" id="sifre" onchange="kontrol()" placeholder="Şifre">
+                                            <div class="show-hide">
+                                                <button>Göster</button>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="form-control-button" 
+                                    <button class="btn-login" id="button" type="submit">
+                                        <div>Giriş Yap</div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div style="display: flex; margin-left: 45px;border: none; color: #2195F6; height: 30px;">
+                                <div>
+                                    <hr style="width: 95px;"">
+                                </div>
+                                <p
+                                    style=" margin: 15px; font-size: 12px; font-family: sans-serif; color: rgb(107,
+                                        106, 106);">
+                                    YA DA</p>
+                                    <div>
+                                        <hr style="width: 95px;">
+                                    </div>
+                                </div>
+                                <div class="facebook">
+                                    <label for="" style="display: flex;">
+                                        <img src="icon.png" alt="facebook">
+                                        <span>Facebook ile Giriş Yap</span>
+                                </div>
+                                </label>
+                                <div class="tag-a" style="text-align: center;">
+                                    <a href="#" style="font-size: 13px;">Şifreni mi unuttun?</a>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="register">
+                    <div class="register-container">
+                        <p>
+                            Hesabın Yok mu?
+                            <a href="#" style="color: #0388cf; font-weight: 570;">Kaydol</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="apps">
+                    <p>Uygulamayı indir.</p>
+                    <div class="uygulamalar">
+                        <a href="#"><img src="applestore.png" alt="apple store"></a>
+                        <a href="#"><img src="googleplay.png" alt="google play"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="alt-kisim">
+                <ul style="margin-bottom: 10px;">
+                    <li>Meta</li>
+                    <li>Hakkında</li>
+                    <li>Blog</li>
+                    <li>İş Fırsatları</li>
+                    <li>Yardım</li>
+                    <li>API</li>
+                    <li>Gizlilik</li>
+                    <li>Koşullar</li>
+                    <li>Başlıca Hesaplar</li>
+                    <li>Konu Etiketleri</li>
+                    <li>Konumlar</li>
+                    <li>Instagram Lite</li>
+                </ul>
+                <ul>
+                    <li>Türkçe</li>
+                    <li>© 2021 Instagram from Meta</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script>    
+     function kontrol(){
+         var kadi = document.getElementById("userName").value;
+         var sifre= document.getElementById("sifre").value;
+        
+         if (kadi== "deneme" && sifre == "1234") {
+             document.getElementById("button").style.backgroundColor="#0095f6";
+         }
+         else{
+            document.getElementById("button").style.backgroundColor="#b2dffc";
+         }
+     }  
+  
+    </script>
+</body>
+
+</html>
